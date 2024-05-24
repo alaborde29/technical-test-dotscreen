@@ -15,30 +15,76 @@ enum GameState {
 }
 
 class GameViewViewModel : ObservableObject {
-    var grid: [[PawnState]] = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 7), count: 6)
-    var playerTurn = true
-    var gameState:GameState = .playing
+    public var grid: [[PawnState]] = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 7), count: 6)
+    public var playerTurn = PawnState.circle
+    public var gameState:GameState = .playing
     
     func reset() {
         grid = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 7), count: 6)
         gameState = .playing
     }
     
-    func play() {
-        let x:Int = 0
+    func play(x: Int) {
         let y:Int = grid[x].firstIndex(of: .empty) ?? 0
         guard !grid[x].contains(.empty) else {
             return
         }
-        if (playerTurn) {
+        if (playerTurn == .circle) {
             grid[x][y] = .cross
         } else {
             grid[x][y] = .circle
         }
-        playerTurn.toggle()
+        playerTurn = (playerTurn == .circle ? .cross : .circle)
     }
     
     func verifyGameState() -> GameState {
-        var last
+        for row in 0..<grid.count {
+            for col in 0..<grid[0].count {
+                if grid[row][col] != .empty {
+                    if checkWin(row: row, col: col) {
+                        return grid[row][col] == .cross ? .win1 : .win2
+                    }
+                }
+            }
+        }
+        
+        let isDraw = grid.allSatisfy ({ $0.allSatisfy ({ $0 != .empty }) })
+        return isDraw ? .draw : .playing
+    }
+    
+    func checkWin(row: Int, col: Int) -> Bool {
+        let directions = [
+            (x: 1, y: 0),
+            (x: 0, y: 1),
+            (x: 1, y: 1),
+            (x: 1, y: -1)
+        ]
+        
+        let currentPlayer = grid[row][col]
+        
+        for direction in directions {
+            var count = 0
+            
+            for i in 0..<4 {
+                let newRow = row + i * direction.y
+                let newCol = col + i * direction.x
+                
+                if newRow >= 0, newRow < grid.count, newCol >= 0, newCol < grid[0].count, grid[newRow][newCol] == currentPlayer {
+                    count += 1
+                } else {
+                    break
+                }
+            }
+            
+            if count == 4 {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    func getCaseState(row: Int, col: Int) -> PawnState {
+        return grid[row][col]
     }
 }

@@ -17,13 +17,24 @@ struct GameView: View {
     
     @StateObject var viewModel = GameViewViewModel()
     var body: some View {
-        HStack {
-            ForEach(0...7, id: \.self) { index in
-                ColumnView(index: index)
-                    .environmentObject(viewModel)
+        VStack {
+            HStack(spacing:0) {
+                ForEach(0...7, id: \.self) { column in
+                    ColumnView(column: column)
+                        .environmentObject(viewModel)
+                }
             }
+            .padding()
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(viewModel.playerTurn == .circle ? Color.blue : Color.red)
+                Text(viewModel.playerTurn == .circle ? "Player 1" : "Player 2")
+                    .foregroundColor(.white)
+                    .font(.title)
+            }
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .frame(width: 250 ,height: 50)
         }
-        .padding()
         .onTapGesture {
             
         }
@@ -31,35 +42,44 @@ struct GameView: View {
 }
 
 struct ColumnView: View {
+    var column: Int
     @EnvironmentObject var viewModel: GameViewViewModel
+
+    
     var body: some View {
-        let _column: Int
-        VStack {
-            for index in 0...6 {
-                PawnView(state: viewModel.board[column][index])
+        VStack(spacing: 0) {
+            ForEach(0...6, id: \.self) { row in
+                PawnView(col: self.column, row: row, state: viewModel.grid[2][2])
+                    .environmentObject(self.viewModel)
             }
         }
     }
 }
 
 struct PawnView: View {
+    @EnvironmentObject var viewModel: GameViewViewModel
+    let col: Int
+    let row: Int
     @State var state: PawnState
-    let index: (Int, Int)
     
     var body: some View {
-        switch state {
-        case .empty:
-            Circle()
+
+        ZStack {
+            Rectangle()
                 .fill(Color.white)
-                .frame(width: 50, height: 50)
-        case .cross:
-            Image(systemName: "cross")
-                .frame(width: 50, height: 50)
-                .foregroundColor(.red)
-        case .circle:
-            Image(systemName: "circle.circle")
-                .frame(width: 50, height: 50)
-                .foregroundColor(.yellow)
+                .frame(width: 40, height: 40)
+                .border(Color.blue, width: 1)
+            switch state {
+            case .empty:
+                Circle()
+                    .fill(Color.white)
+            case .cross:
+                Image(systemName: "cross")
+                    .foregroundColor(.red)
+            case .circle:
+                Image(systemName: "circle.circle")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
