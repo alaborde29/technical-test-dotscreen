@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FAD26FCA2C00770600FF6993 /* connect_for_dotscreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */; };
-		FAD26FCC2C00770600FF6993 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FCB2C00770600FF6993 /* ContentView.swift */; };
+		FAD26FCC2C00770600FF6993 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FCB2C00770600FF6993 /* GameView.swift */; };
 		FAD26FCE2C00770700FF6993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD26FCD2C00770700FF6993 /* Assets.xcassets */; };
 		FAD26FD12C00770700FF6993 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD26FD02C00770700FF6993 /* Preview Assets.xcassets */; };
 		FAD26FDB2C00770800FF6993 /* connect_for_dotscreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FDA2C00770800FF6993 /* connect_for_dotscreenTests.swift */; };
 		FAD26FE52C00770800FF6993 /* connect_for_dotscreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FE42C00770800FF6993 /* connect_for_dotscreenUITests.swift */; };
 		FAD26FE72C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FE62C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift */; };
+		FAD26FF82C00781100FF6993 /* GameViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FF72C00781100FF6993 /* GameViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		FAD26FC62C00770600FF6993 /* connect-for-dotscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "connect-for-dotscreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenApp.swift; sourceTree = "<group>"; };
-		FAD26FCB2C00770600FF6993 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAD26FCB2C00770600FF6993 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		FAD26FCD2C00770700FF6993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD26FD02C00770700FF6993 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAD26FD62C00770800FF6993 /* connect-for-dotscreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "connect-for-dotscreenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		FAD26FE02C00770800FF6993 /* connect-for-dotscreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "connect-for-dotscreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD26FE42C00770800FF6993 /* connect_for_dotscreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenUITests.swift; sourceTree = "<group>"; };
 		FAD26FE62C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAD26FF72C00781100FF6993 /* GameViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		FAD26FC82C00770600FF6993 /* connect-for-dotscreen */ = {
 			isa = PBXGroup;
 			children = (
-				FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */,
-				FAD26FCB2C00770600FF6993 /* ContentView.swift */,
+				FAD26FF62C0077D100FF6993 /* Other */,
+				FAD26FF52C0077BF00FF6993 /* ViewModel */,
+				FAD26FF42C0077B300FF6993 /* View */,
 				FAD26FCD2C00770700FF6993 /* Assets.xcassets */,
 				FAD26FCF2C00770700FF6993 /* Preview Content */,
 			);
@@ -125,6 +128,38 @@
 				FAD26FE62C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift */,
 			);
 			path = "connect-for-dotscreenUITests";
+			sourceTree = "<group>";
+		};
+		FAD26FF32C0077A300FF6993 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAD26FF42C0077B300FF6993 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FCB2C00770600FF6993 /* GameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD26FF52C0077BF00FF6993 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FF72C00781100FF6993 /* GameViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAD26FF62C0077D100FF6993 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */,
+				FAD26FF32C0077A300FF6993 /* Model */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD26FCC2C00770600FF6993 /* ContentView.swift in Sources */,
+				FAD26FF82C00781100FF6993 /* GameViewViewModel.swift in Sources */,
+				FAD26FCC2C00770600FF6993 /* GameView.swift in Sources */,
 				FAD26FCA2C00770600FF6993 /* connect_for_dotscreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

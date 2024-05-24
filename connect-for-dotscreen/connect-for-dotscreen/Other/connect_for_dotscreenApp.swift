@@ -11,7 +11,7 @@ import SwiftUI
 struct connect_for_dotscreenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView()
         }
     }
 }
