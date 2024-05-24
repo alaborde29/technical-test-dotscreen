@@ -41,12 +41,12 @@ struct GameView: View {
 struct ColumnView: View {
     var column: Int
     @EnvironmentObject var viewModel: GameViewViewModel
-
+    @State var refreshview = false
     
     var body: some View {
         VStack(spacing: 0) {
             ForEach(0..<6, id: \.self) { row in
-                PawnView(col: self.column, row: row, state: self.$viewModel.grid[row][self.column])
+                PawnView(col: self.column, row: row, state: self.$viewModel.grid[self.column][row])
                     .environmentObject(self.viewModel)
             }
         }

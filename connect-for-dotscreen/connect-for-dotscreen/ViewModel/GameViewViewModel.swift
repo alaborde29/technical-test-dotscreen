@@ -15,12 +15,12 @@ enum GameState {
 }
 
 class GameViewViewModel : ObservableObject {
-    public var grid: [[PawnState]] = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 7), count: 6)
-    public var playerTurn = PawnState.circle
-    public var gameState:GameState = .playing
+    @Published var grid: [[PawnState]] = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 6), count: 7)
+    @Published var playerTurn = PawnState.circle
+    @Published var gameState:GameState = .playing
     
     func reset() {
-        grid = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 7), count: 6)
+        grid = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 6), count: 7)
         gameState = .playing
     }
     
