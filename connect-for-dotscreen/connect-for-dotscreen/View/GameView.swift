@@ -28,12 +28,43 @@ struct GameView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(viewModel.playerTurn == .circle ? Color.blue : Color.red)
-                Text(viewModel.playerTurn == .circle ? "Player 1" : "Player 2")
-                    .foregroundColor(.white)
-                    .font(.title)
+                if viewModel.getGameState() == GameState.win1 {
+                    Text("Player 1 won !")
+                        .foregroundColor(.white)
+                        .font(.title)
+                }
+                if viewModel.getGameState() == GameState.win2 {
+                    Text("Player 2 won !")
+                        .foregroundColor(.white)
+                        .font(.title)
+                }
+                if viewModel.getGameState() == GameState.draw {
+                    Text("Draw !")
+                        .foregroundColor(.white)
+                        .font(.title)
+                }
+                if viewModel.getGameState() == GameState.playing {
+                    Text(viewModel.playerTurn == .circle ? "Player 1" : "Player 2")
+                        .foregroundColor(.white)
+                        .font(.title)
+                }
             }
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .frame(width: 250 ,height: 50)
+            if viewModel.getGameState() != GameState.playing {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.green)
+                    Text("Replay ?")
+                        .foregroundColor(.white)
+                        .font(.title)
+                }
+                .frame(width: 130, height: 40)
+                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .onTapGesture {
+                    viewModel.reset()
+                }
+            }
         }
     }
 }
@@ -45,14 +76,16 @@ struct ColumnView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            ForEach(0..<6, id: \.self) { row in
+            ForEach((0..<6).reversed(), id: \.self) { row in
                 PawnView(col: self.column, row: row, state: self.$viewModel.grid[self.column][row])
                     .environmentObject(self.viewModel)
             }
         }
         .onTapGesture {
             print("tap")
-            viewModel.play(x: column)
+            if viewModel.getGameState() == GameState.playing {
+                viewModel.play(x: column)
+            }
         }
     }
 }

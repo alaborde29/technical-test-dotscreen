@@ -19,6 +19,10 @@ class GameViewViewModel : ObservableObject {
     @Published var playerTurn = PawnState.circle
     @Published var gameState:GameState = .playing
     
+    func getGameState() -> GameState {
+        return gameState
+    }
+    
     func reset() {
         grid = [[PawnState]](repeating: [PawnState](repeating: .empty, count: 6), count: 7)
         gameState = .playing
@@ -26,7 +30,8 @@ class GameViewViewModel : ObservableObject {
     
     func play(x: Int) {
         let y:Int = grid[x].firstIndex(of: .empty) ?? 0
-        guard grid[x].contains(.empty) else {
+        guard grid[x].contains(.empty) && gameState == .playing else {
+            print("guard")
             return
         }
         print(y)
@@ -36,6 +41,7 @@ class GameViewViewModel : ObservableObject {
             grid[x][y] = .circle
         }
         print(grid[x][y])
+        gameState = verifyGameState()
         playerTurn = (playerTurn == .circle ? .cross : .circle)
     }
     
