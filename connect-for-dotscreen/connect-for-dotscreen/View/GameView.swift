@@ -19,7 +19,7 @@ struct GameView: View {
     var body: some View {
         VStack {
             HStack(spacing:0) {
-                ForEach(0...7, id: \.self) { column in
+                ForEach(0..<7, id: \.self) { column in
                     ColumnView(column: column)
                         .environmentObject(viewModel)
                 }
@@ -35,9 +35,6 @@ struct GameView: View {
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .frame(width: 250 ,height: 50)
         }
-        .onTapGesture {
-            
-        }
     }
 }
 
@@ -48,10 +45,13 @@ struct ColumnView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            ForEach(0...6, id: \.self) { row in
-                PawnView(col: self.column, row: row, state: viewModel.grid[2][2])
+            ForEach(0..<6, id: \.self) { row in
+                PawnView(col: self.column, row: row, state: viewModel.grid[row][self.column])
                     .environmentObject(self.viewModel)
             }
+        }
+        .onTapGesture {
+            viewModel.play(x: column)
         }
     }
 }
@@ -71,8 +71,8 @@ struct PawnView: View {
                 .border(Color.blue, width: 1)
             switch state {
             case .empty:
-                Circle()
-                    .fill(Color.white)
+                Image(systemName: "cross")
+                    .foregroundColor(.white)
             case .cross:
                 Image(systemName: "cross")
                     .foregroundColor(.red)
