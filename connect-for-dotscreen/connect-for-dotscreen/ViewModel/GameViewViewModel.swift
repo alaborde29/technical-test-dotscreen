@@ -26,14 +26,16 @@ class GameViewViewModel : ObservableObject {
     
     func play(x: Int) {
         let y:Int = grid[x].firstIndex(of: .empty) ?? 0
-        guard !grid[x].contains(.empty) else {
+        guard grid[x].contains(.empty) else {
             return
         }
+        print(y)
         if (playerTurn == .circle) {
             grid[x][y] = .cross
         } else {
             grid[x][y] = .circle
         }
+        print(grid[x][y])
         playerTurn = (playerTurn == .circle ? .cross : .circle)
     }
     
