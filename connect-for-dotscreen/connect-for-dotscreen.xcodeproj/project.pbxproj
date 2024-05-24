@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAD26FCA2C00770600FF6993 /* connect_for_dotscreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */; };
+		FAD26FCC2C00770600FF6993 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FCB2C00770600FF6993 /* ContentView.swift */; };
+		FAD26FCE2C00770700FF6993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD26FCD2C00770700FF6993 /* Assets.xcassets */; };
+		FAD26FD12C00770700FF6993 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD26FD02C00770700FF6993 /* Preview Assets.xcassets */; };
+		FAD26FDB2C00770800FF6993 /* connect_for_dotscreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FDA2C00770800FF6993 /* connect_for_dotscreenTests.swift */; };
+		FAD26FE52C00770800FF6993 /* connect_for_dotscreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FE42C00770800FF6993 /* connect_for_dotscreenUITests.swift */; };
+		FAD26FE72C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD26FE62C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD26FD72C00770800FF6993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD26FBE2C00770600FF6993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD26FC52C00770600FF6993;
+			remoteInfo = "connect-for-dotscreen";
+		};
+		FAD26FE12C00770800FF6993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD26FBE2C00770600FF6993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD26FC52C00770600FF6993;
+			remoteInfo = "connect-for-dotscreen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAD26FC62C00770600FF6993 /* connect-for-dotscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "connect-for-dotscreen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenApp.swift; sourceTree = "<group>"; };
+		FAD26FCB2C00770600FF6993 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAD26FCD2C00770700FF6993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD26FD02C00770700FF6993 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAD26FD62C00770800FF6993 /* connect-for-dotscreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "connect-for-dotscreenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD26FDA2C00770800FF6993 /* connect_for_dotscreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenTests.swift; sourceTree = "<group>"; };
+		FAD26FE02C00770800FF6993 /* connect-for-dotscreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "connect-for-dotscreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD26FE42C00770800FF6993 /* connect_for_dotscreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenUITests.swift; sourceTree = "<group>"; };
+		FAD26FE62C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect_for_dotscreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD26FC32C00770600FF6993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD26FD32C00770800FF6993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD26FDD2C00770800FF6993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD26FBD2C00770600FF6993 = {
+			isa = PBXGroup;
+			children = (
+				FAD26FC82C00770600FF6993 /* connect-for-dotscreen */,
+				FAD26FD92C00770800FF6993 /* connect-for-dotscreenTests */,
+				FAD26FE32C00770800FF6993 /* connect-for-dotscreenUITests */,
+				FAD26FC72C00770600FF6993 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD26FC72C00770600FF6993 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FC62C00770600FF6993 /* connect-for-dotscreen.app */,
+				FAD26FD62C00770800FF6993 /* connect-for-dotscreenTests.xctest */,
+				FAD26FE02C00770800FF6993 /* connect-for-dotscreenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD26FC82C00770600FF6993 /* connect-for-dotscreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FC92C00770600FF6993 /* connect_for_dotscreenApp.swift */,
+				FAD26FCB2C00770600FF6993 /* ContentView.swift */,
+				FAD26FCD2C00770700FF6993 /* Assets.xcassets */,
+				FAD26FCF2C00770700FF6993 /* Preview Content */,
+			);
+			path = "connect-for-dotscreen";
+			sourceTree = "<group>";
+		};
+		FAD26FCF2C00770700FF6993 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FD02C00770700FF6993 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAD26FD92C00770800FF6993 /* connect-for-dotscreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FDA2C00770800FF6993 /* connect_for_dotscreenTests.swift */,
+			);
+			path = "connect-for-dotscreenTests";
+			sourceTree = "<group>";
+		};
+		FAD26FE32C00770800FF6993 /* connect-for-dotscreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD26FE42C00770800FF6993 /* connect_for_dotscreenUITests.swift */,
+				FAD26FE62C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift */,
+			);
+			path = "connect-for-dotscreenUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD26FC52C00770600FF6993 /* connect-for-dotscreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD26FEA2C00770800FF6993 /* Build configuration list for PBXNativeTarget "connect-for-dotscreen" */;
+			buildPhases = (
+				FAD26FC22C00770600FF6993 /* Sources */,
+				FAD26FC32C00770600FF6993 /* Frameworks */,
+				FAD26FC42C00770600FF6993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "connect-for-dotscreen";
+			productName = "connect-for-dotscreen";
+			productReference = FAD26FC62C00770600FF6993 /* connect-for-dotscreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAD26FD52C00770800FF6993 /* connect-for-dotscreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD26FED2C00770800FF6993 /* Build configuration list for PBXNativeTarget "connect-for-dotscreenTests" */;
+			buildPhases = (
+				FAD26FD22C00770800FF6993 /* Sources */,
+				FAD26FD32C00770800FF6993 /* Frameworks */,
+				FAD26FD42C00770800FF6993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD26FD82C00770800FF6993 /* PBXTargetDependency */,
+			);
+			name = "connect-for-dotscreenTests";
+			productName = "connect-for-dotscreenTests";
+			productReference = FAD26FD62C00770800FF6993 /* connect-for-dotscreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD26FDF2C00770800FF6993 /* connect-for-dotscreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD26FF02C00770800FF6993 /* Build configuration list for PBXNativeTarget "connect-for-dotscreenUITests" */;
+			buildPhases = (
+				FAD26FDC2C00770800FF6993 /* Sources */,
+				FAD26FDD2C00770800FF6993 /* Frameworks */,
+				FAD26FDE2C00770800FF6993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD26FE22C00770800FF6993 /* PBXTargetDependency */,
+			);
+			name = "connect-for-dotscreenUITests";
+			productName = "connect-for-dotscreenUITests";
+			productReference = FAD26FE02C00770800FF6993 /* connect-for-dotscreenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD26FBE2C00770600FF6993 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FAD26FC52C00770600FF6993 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FAD26FD52C00770800FF6993 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FAD26FC52C00770600FF6993;
+					};
+					FAD26FDF2C00770800FF6993 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FAD26FC52C00770600FF6993;
+					};
+				};
+			};
+			buildConfigurationList = FAD26FC12C00770600FF6993 /* Build configuration list for PBXProject "connect-for-dotscreen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD26FBD2C00770600FF6993;
+			productRefGroup = FAD26FC72C00770600FF6993 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD26FC52C00770600FF6993 /* connect-for-dotscreen */,
+				FAD26FD52C00770800FF6993 /* connect-for-dotscreenTests */,
+				FAD26FDF2C00770800FF6993 /* connect-for-dotscreenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD26FC42C00770600FF6993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD26FD12C00770700FF6993 /* Preview Assets.xcassets in Resources */,
+				FAD26FCE2C00770700FF6993 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD26FD42C00770800FF6993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD26FDE2C00770800FF6993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD26FC22C00770600FF6993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD26FCC2C00770600FF6993 /* ContentView.swift in Sources */,
+				FAD26FCA2C00770600FF6993 /* connect_for_dotscreenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD26FD22C00770800FF6993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD26FDB2C00770800FF6993 /* connect_for_dotscreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD26FDC2C00770800FF6993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD26FE52C00770800FF6993 /* connect_for_dotscreenUITests.swift in Sources */,
+				FAD26FE72C00770800FF6993 /* connect_for_dotscreenUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD26FD82C00770800FF6993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD26FC52C00770600FF6993 /* connect-for-dotscreen */;
+			targetProxy = FAD26FD72C00770800FF6993 /* PBXContainerItemProxy */;
+		};
+		FAD26FE22C00770800FF6993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD26FC52C00770600FF6993 /* connect-for-dotscreen */;
+			targetProxy = FAD26FE12C00770800FF6993 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAD26FE82C00770800FF6993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAD26FE92C00770800FF6993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD26FEB2C00770800FF6993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"connect-for-dotscreen/Preview Content\"";
+				DEVELOPMENT_TEAM = 5Z562W724H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.alaborde.connect-for-dotscreen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD26FEC2C00770800FF6993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"connect-for-dotscreen/Preview Content\"";
+				DEVELOPMENT_TEAM = 5Z562W724H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.alaborde.connect-for-dotscreen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAD26FEE2C00770800FF6993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z562W724H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.alaborde.connect-for-dotscreenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/connect-for-dotscreen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/connect-for-dotscreen";
+			};
+			name = Debug;
+		};
+		FAD26FEF2C00770800FF6993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z562W724H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.alaborde.connect-for-dotscreenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/connect-for-dotscreen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/connect-for-dotscreen";
+			};
+			name = Release;
+		};
+		FAD26FF12C00770800FF6993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z562W724H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.alaborde.connect-for-dotscreenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "connect-for-dotscreen";
+			};
+			name = Debug;
+		};
+		FAD26FF22C00770800FF6993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Z562W724H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.alaborde.connect-for-dotscreenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "connect-for-dotscreen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD26FC12C00770600FF6993 /* Build configuration list for PBXProject "connect-for-dotscreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD26FE82C00770800FF6993 /* Debug */,
+				FAD26FE92C00770800FF6993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD26FEA2C00770800FF6993 /* Build configuration list for PBXNativeTarget "connect-for-dotscreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD26FEB2C00770800FF6993 /* Debug */,
+				FAD26FEC2C00770800FF6993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD26FED2C00770800FF6993 /* Build configuration list for PBXNativeTarget "connect-for-dotscreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD26FEE2C00770800FF6993 /* Debug */,
+				FAD26FEF2C00770800FF6993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD26FF02C00770800FF6993 /* Build configuration list for PBXNativeTarget "connect-for-dotscreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD26FF12C00770800FF6993 /* Debug */,
+				FAD26FF22C00770800FF6993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD26FBE2C00770600FF6993 /* Project object */;
+}
